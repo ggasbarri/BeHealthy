@@ -28,7 +28,7 @@ So far, this app is finalist in currently ongoing Grants 4 Apps Bogotá by Bayer
 
 ![DailyRegistryFragment2](https://github.com/gincos/BeHealthy/blob/master/Screenshots/BeHealthy_3.png)
 
-![ProfileActivity](https://github.com/gincos/BeHealthy/blob/master/Screenshots/BeHealthy_3.png)
+![ProfileActivity](https://github.com/gincos/BeHealthy/blob/master/Screenshots/BeHealthy_5.png)
 
 ![CalendarFragment](https://github.com/gincos/BeHealthy/blob/master/Screenshots/BeHealthy_6.png)
 
