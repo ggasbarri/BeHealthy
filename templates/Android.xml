@@ -1,0 +1,24 @@
+<templateSet group="Android">
+  <template name="finals" value="public static final String $STRING_NAME$ = &quot;$VALUE$&quot;;" description="Constant String" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="finali" value="public static final int $INT_NAME$ = $VALUE$;" description="Constant int" toReformat="false" toShortenFQNames="true">
+    <variable name="INT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="fbc" value="($cast$) findViewById(R.id.$resId$);" description="findViewById with cast" toReformat="true" toShortenFQNames="true">
+    <variable name="cast" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>

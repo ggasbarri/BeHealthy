@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.behealthy.gincos.activities.ProfileActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:padding="4dp"
+        app:cardCornerRadius="40dp"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/cardView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_level_progress">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <com.behealthy.gincos.utils.MyTextView
+        android:id="@+id/profile_name"
+        android:textColor="@color/textCustomColor"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Jonnaiker Muñoz"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <com.behealthy.gincos.utils.MyTextView
+        android:id="@+id/profile_years"
+        android:text="@string/profile_no_age"
+        android:textColor="@color/textCustomColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintLeft_toLeftOf="@+id/profile_name"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="8dp" />
+
+    <com.behealthy.gincos.utils.MyTextView
+        android:text="@string/profile_level"
+        android:gravity="center"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:textSize="18sp"
+        android:textColor="@color/blueDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/profile_level_text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_years"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.behealthy.gincos.utils.MyTextView
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/blueDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/profile_level"
+        app:layout_constraintLeft_toRightOf="@+id/profile_level_text"
+        app:layout_constraintTop_toTopOf="@+id/profile_level_text"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_level_text" />
+
+    <com.behealthy.gincos.utils.MyTextView
+        app:layout_constraintVertical_chainStyle="packed"
+        android:alpha="0.7"
+        android:text="0/1000"
+        android:textColor="@color/bluePrimary"
+        android:id="@+id/profile_current_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profile_level_progress"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:progress="70"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_level_progress"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_level_text"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="7dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_current_experience"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3">
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/greenDark"
+            android:id="@+id/profile_more_info_button"
+            android:layout_width="match_parent"
+            app:cardElevation="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            style="@style/ProfileButtons">
+
+            <android.support.constraint.ConstraintLayout
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.behealthy.gincos.utils.MyTextView
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_extra_info"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <ImageView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/greenPrimary"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/cardView2"
+            style="@style/ProfileButtons">
+
+            <android.support.constraint.ConstraintLayout
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.behealthy.gincos.utils.MyTextView
+                    android:textSize="16sp"
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_achievements"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <ImageView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/greenLight"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/cardView3"
+            style="@style/ProfileButtons">
+
+            <android.support.constraint.ConstraintLayout
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.behealthy.gincos.utils.MyTextView
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_completed_tasks"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <ImageView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/profile_logout_btn"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_current_experience"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintVertical_bias="0.505">
+
+        <ImageView
+            android:src="@drawable/ic_power_settings_new_black_36dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_width="28dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_height="28dp"
+            app:layout_constraintRight_toLeftOf="@+id/myTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" />
+
+        <com.behealthy.gincos.utils.MyTextView
+            app:layout_constraintVertical_bias="0.45"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_logout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/myTextView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/imageView" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="settings_date_format_keys">
+        <item>@string/settings_date_option_latin</item>
+        <item>@string/settings_date_option_american</item>
+        <item>@string/settings_date_option_european</item>
+    </string-array>
+
+</resources>

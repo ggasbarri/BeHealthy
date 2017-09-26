@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/settings_date_option_latin"
+        android:entries="@array/settings_date_format_keys"
+        android:entryValues="@array/settings_date_format_keys"
+        android:key="@string/settings_date_format_key"
+        android:title="@string/settings_date_format_label" />
+
+    <com.behealthy.gincos.utils.TimePreference
+        android:defaultValue="@string/settings_notification_time_default"
+        android:key="@string/settings_notification_time_key"
+        android:title="@string/settings_notification_time_label"/>
+
+
+</PreferenceScreen>

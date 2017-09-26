@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BeHealthy</string>
+    <string name="achievement_started">¡Empezaste a estar saludable!</string>
+    <string name="daily_done">¡Ya terminaste por hoy!</string>
+    <string name="dialog_dismiss">¡Genial!</string>
+    <string name="dialog_new_task">Tienes una nueva Tarea</string>
+    <string name="drawer_calendar">Calendario</string>
+    <string name="drawer_logout">Cerrar sesión</string>
+    <string name="drawer_settings">Opciones</string>
+    <string name="drawer_social">Social</string>
+    <string name="login_signed_in">¡Has iniciado sesión!</string>
+    <string name="main_active_tasks">Tareas Activas:</string>
+    <string name="main_daily_registry">Registro Diario</string>
+    <string name="main_level">Nivel&#032;&#032;</string>
+    <string name="main_scores">Puntaje de las tareas</string>
+    <string name="notification_description">¡Recuerda completar tus tareas para avanzar hacia una vida saludable!</string>
+    <string name="notification_title">¿Ya has hecho tu registro de hoy?</string>
+    <string name="profile_achievements">Mis Logros</string>
+    <string name="profile_completed_tasks">Tareas Completadas</string>
+    <string name="profile_extra_info">¡Cuéntanos más sobre ti!</string>
+    <string name="profile_level">Nivel</string>
+    <string name="profile_logout">Cerrar sesión</string>
+    <string name="profile_no_age">Edad desconocida</string>
+    <string name="settings_date_format_label">Formato de fecha</string>
+    <string name="water_curious_fact">El 60% del cuerpo humano está hecho de agua.</string>
+    <string name="water_description_1">Beber cinco vasos de agua o más diariamente reduce en 46% las posibilidades de tener un infarto.</string>
+    <string name="water_description_2">La Aspirina® 100 de Bayer te ayuda a prevenir el riesgo de infarto o paro cardíaco, en especial si posees dos o más factores de riesgo.</string>
+    <string name="main_connecting">Conectando…</string>
+    <string name="settings_notification_time_label">Hora del recordatiorio:</string>
+</resources>

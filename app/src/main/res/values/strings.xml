@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">BeHealthy</string>
+
+    <!-- Achievements -->
+    <string name="achievement_started">Started being healthy!</string>
+
+    <!-- Daily Registry -->
+    <string name="daily_done">You are done for today!</string>
+
+    <!-- Drawer -->
+    <string name="drawer_home" translatable="false">Home</string>
+    <string name="drawer_social">Social</string>
+    <string name="drawer_calendar">Calendar</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_logout">Logout</string>
+
+    <!-- Login Activity -->
+    <string name="login_signed_in">Signed in!</string>
+
+    <!-- Main Fragment -->
+    <string name="main_level">Level&#032;&#032;</string>
+    <string name="main_daily_registry">Daily Registry</string>
+    <string name="main_active_tasks">Active Tasks:</string>
+    <string name="main_scores">Task score</string>
+    <string name="main_connecting">Connecting…</string>
+
+    <!-- New Task Dialog -->
+    <string name="dialog_new_task">You have got a new Task!</string>
+    <string name="dialog_dismiss">Great!</string>
+
+    <!-- Notifications -->
+    <string name="notification_title">Did you make your registry today?</string>
+    <string name="notification_description">Remember to complete your tasks to step into a healthy life!</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_extra_info">Tell us more about yourself!</string>
+    <string name="profile_achievements">My Achievements</string>
+    <string name="profile_completed_tasks">Completed Tasks</string>
+    <string name="profile_level">Level</string>
+    <string name="profile_logout">Logout</string>
+    <string name="profile_no_age">Unknown age</string>
+
+    <!-- Misc -->
+    <string name="daily_button_transition" translatable="false">Daily Button Transition</string>
+    <string name="active_task_image_transition" translatable="false">Active Task Image Transition</string>
+
+    <!-- Settings -->
+    <string name="settings_date_format_label">Date Format</string>
+    <string name="settings_date_format_key" translatable="false">date_format</string>
+    <string name="settings_date_option_latin" translatable="false">dd/MM/yyyy</string>
+    <string name="settings_date_option_american" translatable="false">MM/dd/yyyy</string>
+    <string name="settings_date_option_european" translatable="false">yyyy/MM/dd</string>
+    <string name="settings_notification_time_label">Time of reminder:</string>
+    <string name="settings_notification_time_key" translatable="false">notification_time</string>
+    <string name="settings_notification_time_default" translatable="false">21:00</string>
+
+    <!-- Tasks -->
+    <string name="water_title" translatable="false">Water Fighter</string>
+    <string name="water_description_1">Drinking five or more glasses of water a day reduce in 46% your chance of having a fatal heart attack.</string>
+    <string name="water_description_2">Since the beginning of life, water has had an indispensable role. Barely all life forms need it to survive. We should build a good water-drinking routine, since it provides us with many needs like lubricating the joints, protecting the spinal cord and other sensitive tissues, regulating body temperature, and assisting the passage of food through the intestines. Also, it is the main ingredient for our body to make the blood that runs through our arteries and veins.</string>
+    <string name="water_curious_fact">Around 70% of the human body is made of water.</string>
+
+</resources>
