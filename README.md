@@ -16,7 +16,7 @@ Firebase Authentication. An example of the database hierarchy can be found on [D
 
 # Achievements
 
-So far, this app is finalist in currently ongoing Grants 4 Apps Bogotá by Bayer.
+So far, this app is finalist in currently ongoing Grants 4 Apps Bogotá by Bayer™.
 
 
 
